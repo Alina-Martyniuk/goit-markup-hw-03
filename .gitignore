@@ -1,5 +1,5 @@
 .DS_Store
-*.code-workspace# Logs
+*.code-workspace
 
 .gitattributes
 

@@ -8,6 +8,7 @@
     --accent-color: #2196F3;
     --clear-black-color: #000000;
     --border-color: #EEEEEE;
+    --border-header-color: #ECECEC;
 }
 
 body{
@@ -76,6 +77,10 @@ button{
 }
 /* Header */
 
+header{
+    border-bottom: var(--border-header-color) 1px solid;
+}
+
 .navigation, .navigation-links, .navigation-contacts, .navigation-pages{
     display: flex;
 }
@@ -84,12 +89,12 @@ button{
 align-items: center;
 }
 
-.container.navigation{
-    padding: 24px 15px 25px 15px;
-}
-
-.navigation{
+/* .navigation{
     justify-content: space-between;
+} */
+
+.navigation-pages, .navigation-contacts{
+    margin-left: auto;
 }
 
 .mail{
@@ -118,6 +123,7 @@ align-items: center;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    padding: 24px 15px 25px 15px;
 }
 
 .page{
@@ -125,6 +131,7 @@ align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    padding: 24px 15px 25px 15px;
     letter-spacing: 0.02em;
 }
 
@@ -143,6 +150,7 @@ align-items: center;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding: 24px 15px 25px 15px;
 }
 
 /* Section Hero */
@@ -164,6 +172,9 @@ align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-button{
@@ -192,6 +203,7 @@ align-items: center;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
 
 }
 
@@ -270,6 +282,7 @@ gap: 30px;
     padding: 30px 0px;
     border: rgba(0, 0, 0, 0.25) 1px solid;
     border-top:none;
+    background-color: var(--clear-white-color);
 }
 
 .team-blocks img{
@@ -290,7 +303,6 @@ gap: 30px;
     padding: 6px 22px;
     border-radius: 4px;
     border:none;
-    margin-bottom: 50px;
 }
 
 .projects-button:hover, .projects-button:focus {
@@ -305,6 +317,7 @@ gap: 30px;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em; 
+    margin-bottom: 4px;
 }
 
 .project-text{
@@ -318,6 +331,7 @@ gap: 30px;
     display: flex;
     justify-content: center;
     gap: 8px;
+    margin-bottom: 50px;
 
 }
 
@@ -341,14 +355,9 @@ gap: 30px;
 
 footer{
     background-color: var(--bg-dark-color);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    padding: 60px, 60px;
-}
-
-.container.contacts-footer{
-    padding: 60px 15px;
+    padding: 60px 0px;
 }
 
 .logo-footer {
